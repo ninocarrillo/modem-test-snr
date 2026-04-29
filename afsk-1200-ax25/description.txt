@@ -1,0 +1,11 @@
+***** AFSK 1200 AX.25 SNR audio tracks *****
+- Each track contains 500 unique, numbered packets
+- Each packet is a total of 68 bytes:
+-- 16 header bytes
+-- 50 payload bytes
+-- 2 CRC bytes
+- Average Signal to Noise Ratio given in the title of the track
+- Sample rate is 8000 Hz
+- Noise bandwidth is 3000 Hz
+- Many packets are back-to-back to save file space
+- Preamble length is 50mS prior to back-to-back packet bursts
