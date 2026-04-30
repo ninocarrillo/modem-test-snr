@@ -10,3 +10,13 @@
 - Noise bandwidth is 3000 Hz
 - Packets are back-to-back to save file space
 - Preamble length is 50mS
+- QPSK details:
+-- 1650 Hz carrier
+-- 1800 symbols per second
+-- RRC pulse shaping, rolloff factor 0.3
+-- Data encoded as carrier phase changes per IL2P v0.6 spec:
+--- Dibit 11: 0 deg (no phase change)
+--- Dibit 10: +90 deg
+--- Dibit 01: +270 deg
+--- Dibit 00: +180 deg
+--- Dibit ordered MSB first (first bit in the stream on the left)
