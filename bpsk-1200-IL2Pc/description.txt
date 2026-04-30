@@ -1,0 +1,12 @@
+***** BPSK 1200 IL2Pc SNR audio tracks *****
+- Each track contains 100 unique, numbered packets
+- Each packet consists of:
+-- IL2P header
+-- 50 payload bytes
+-- 16 Reed-Solomon parity symbols
+-- Trailing CRC protected with a Hamming code (4 bytes total)
+- Average Signal to Noise Ratio given in the title of the track
+- Sample rate is 7200 Hz
+- Noise bandwidth is 3000 Hz
+- Packets are back-to-back to save file space
+- Preamble length is 50mS
