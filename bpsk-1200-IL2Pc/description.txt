@@ -10,3 +10,10 @@
 - Noise bandwidth is 3000 Hz
 - Packets are back-to-back to save file space
 - Preamble length is 50mS
+- BPSK details:
+-- 1500 Hz carrier
+-- 1200 symbols per second
+-- RRC pulse shaping, rolloff factor 0.9
+-- Data encoded as carrier phase changes per IL2P v0.6 spec:
+--- Bit 1 sent as no phase change
+--- Bit 0 sent as +180 deg phase change
